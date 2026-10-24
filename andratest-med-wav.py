@@ -11,7 +11,7 @@ print("De första 10 samples:", audio[:10])
 
 delay_antal = (sample_rate * delay) # delay på delay(antal)ms * frekvens för antal samples efter delay(antal)ms
 delayed_audio = np.zeros_like(audio) # array med samma form som audio men fylld med nollor
-delayed_audio[int(delay_antal):] = audio[:-int(delay_antal)] #skapar en delay på 10ms där ljudet skjuts fram med 441 samples
+delayed_audio[int(delay_antal):] = audio[:-int(delay_antal)] #skapar en delay på delay(antal)ms där ljudet skjuts fram med 441 samples
 
 output= (delayed_audio * volume + audio) #kombinerar wet(delayed_audio) och dry(audio) signaler tillsammans med volymkontrollen för en output signal 
 
