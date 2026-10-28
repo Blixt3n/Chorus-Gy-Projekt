@@ -12,5 +12,5 @@ depth = 5/1000 #hur mycket delayen ska kunna röra sig i ms
 delayed_audio = loop_function(rate, delayed_audio, base_delay, depth, audio, sample_rate) #funktionen som skapar delay-arrayen med fördröjt ljud
 
 output= (delayed_audio * volume + audio) #kombinerar wet(delayed_audio) och dry(audio) signaler tillsammans med volymkontrollen för en output signal 
-sf.write(".wav-filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms bas delay "+str(volume)+" volym "+str(rate)+" rate"+" delayljud.wav", delayed_audio, sample_rate) # skapar en fil med enbart delayljudet
-sf.write(".wav-filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms bas delay "+str(volume)+" volym "+str(rate)+" rate"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat
+sf.write(".wav-filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms basdelay "+str(volume)+" volym "+str(rate)+" rate"+" delayljud.wav", delayed_audio, sample_rate) # skapar en fil med enbart delayljudet
+sf.write(".wav-filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms basdelay "+str(volume)+" volym "+str(rate)+" rate"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat
