@@ -22,4 +22,4 @@ for i in range(0,len(audio)):
         continue
 
 output= (delayed_audio * volume + audio) #kombinerar wet(delayed_audio) och dry(audio) signaler tillsammans med volymkontrollen för en output signal 
-sf.write(".wav-filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms bas delay "+str(volume)+" volym "+str(rate)+" rate"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat
+sf.write(".wav_skapade_filer/CleanArpeggio "+str(depth * 1000)+" depth i ms "+str(base_delay * 1000)+" ms bas delay "+str(volume)+" volym "+str(rate)+" rate"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat

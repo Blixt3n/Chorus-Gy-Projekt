@@ -19,4 +19,4 @@ print("De första position 441 till 451 samples av output:", output[441:451])
 print("De första position 441 till 451 samples av delayed_audio:", delayed_audio[441:451])
 
 
-sf.write(".wav-filer/elgitarrG-sträng_delayed" +str(delay * 1000)+"ms" + str(volume)+"volym"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat
+sf.write(".wav_skapade_filer/elgitarrG-sträng_delayed" +str(delay * 1000)+"ms" + str(volume)+"volym"+".wav", output, sample_rate) #skapa den nya modifierade filen med delay applicerat
